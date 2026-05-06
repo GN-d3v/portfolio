@@ -40,12 +40,10 @@
             <span className="dot"></span>
             <span>{t.statusbar.status}</span>
           </div>
-          <span className="sep">│</span>
-          <span>{t.statusbar.version}</span>
-          <span className="sep">│</span>
-          <span>{t.statusbar.uptime}</span>
-          <span className="sep">│</span>
-          <span style={{ display: window.innerWidth < 700 ? 'none' : 'inline' }}>{t.statusbar.location}</span>
+          <span className="sep hide-mobile">│</span>
+          <span className="hide-mobile">{t.statusbar.version}</span>
+          <span className="sep hide-mobile">│</span>
+          <span className="hide-mobile">{t.statusbar.uptime}</span>
           <div className="right">
             <span style={{ fontVariantNumeric: 'tabular-nums' }}>{time}</span>
             <div className="lang-switch">
