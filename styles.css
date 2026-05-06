@@ -521,6 +521,8 @@ section.scene {
   border-radius: 6px;
   overflow: hidden;
   transition: transform 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 .member:hover { border-color: var(--green); transform: translateY(-3px); }
 .member .avatar {
@@ -559,7 +561,12 @@ section.scene {
   overflow: hidden;
   z-index: 1;
 }
-.member .body { padding: 22px; }
+.member .body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 .member h5 {
   margin: 0;
   font-family: var(--mono);
@@ -579,7 +586,7 @@ section.scene {
   line-height: 1.55;
 }
 .member .stats {
-  margin-top: 18px;
+  margin-top: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;

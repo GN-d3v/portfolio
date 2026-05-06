@@ -247,7 +247,7 @@ function Contact({ t }) {
     e.preventDefault();
     setLoading(true);
     try {
-      await fetch("https://formsubmit.co/ajax/gnd3vs@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/8aee64e3459e9858463a016c85146882", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
