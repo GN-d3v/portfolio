@@ -38,14 +38,14 @@
         <div className="statusbar">
           <div className="group">
             <span className="dot"></span>
-            <span>{t.statusbar.status}</span>
+            <span className="status-text">{t.statusbar.status}</span>
           </div>
           <span className="sep hide-mobile">│</span>
           <span className="hide-mobile">{t.statusbar.version}</span>
           <span className="sep hide-mobile">│</span>
           <span className="hide-mobile">{t.statusbar.uptime}</span>
           <div className="right">
-            <span style={{ fontVariantNumeric: 'tabular-nums' }}>{time}</span>
+            <span className="hide-mobile" style={{ fontVariantNumeric: 'tabular-nums' }}>{time}</span>
             <div className="lang-switch">
               <button className={lang === "it" ? "active" : ""} onClick={() => setLang("it")}>IT</button>
               <button className={lang === "en" ? "active" : ""} onClick={() => setLang("en")}>EN</button>

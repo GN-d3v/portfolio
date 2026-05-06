@@ -102,9 +102,23 @@ button { font-family: inherit; cursor: pointer; }
 .statusbar .group {
   display: flex; align-items: center; gap: 8px;
   min-width: 0;
+  flex-shrink: 1;
+  overflow: hidden;
+}
+.statusbar .group span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 .statusbar .sep { color: var(--fg-mute); flex-shrink: 0; }
-.statusbar .right { margin-left: auto; display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
+.statusbar .right {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;   /* mai compresso: lo switch IT/EN sempre visibile */
+}
 .statusbar .lang-switch {
   display: flex; gap: 0; border: 1px solid var(--line-2);
   border-radius: 4px; overflow: hidden;
@@ -120,6 +134,10 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 640px) {
   .statusbar { gap: 6px; padding: 0 12px; font-size: 10.5px; }
   .statusbar .hide-mobile { display: none; }
+}
+@media (max-width: 380px) {
+  .statusbar .status-text { display: none; }  /* nasconde "system: online" sui telefoni tiny */
+  .statusbar .right { gap: 8px; }
 }
 
 /* Side rail */
