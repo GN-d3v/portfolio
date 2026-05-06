@@ -179,7 +179,7 @@ const CONTENT = {
       h2Em: "che vuoi realizzare?",
       desc: "Rispondiamo entro 48 ore. Raccontaci la tua idea e ti diciamo come possiamo aiutarti a concretizzarla.",
       info: [
-        { k: "email", v: "info@gndev.it", link: "mailto:info@gndev.it" },
+        { k: "email", v: "gnd3vs@gmail.com", link: "mailto:gnd3vs@gmail.com" },
         { k: "github", v: "github.com/gn-d3v", link: "#" },
         { k: "instagram", v: "@gndev.studio", link: "#" },
       ],
@@ -384,7 +384,7 @@ const CONTENT = {
       h2Em: "you want to build?",
       desc: "We respond within 48 hours. Tell us your idea and we'll let you know how we can help make it real.",
       info: [
-        { k: "email", v: "info@gndev.it", link: "mailto:info@gndev.it" },
+        { k: "email", v: "gnd3vs@gmail.com", link: "mailto:gnd3vs@gmail.com" },
         { k: "github", v: "github.com/gn-d3v", link: "#" },
         { k: "instagram", v: "@gndev.studio", link: "#" },
       ],
