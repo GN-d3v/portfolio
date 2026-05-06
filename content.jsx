@@ -180,8 +180,7 @@ const CONTENT = {
       desc: "Rispondiamo entro 48 ore. Raccontaci la tua idea e ti diciamo come possiamo aiutarti a concretizzarla.",
       info: [
         { k: "email", v: "gnd3vs@gmail.com", link: "mailto:gnd3vs@gmail.com" },
-        { k: "github", v: "github.com/gn-d3v", link: "#" },
-        { k: "instagram", v: "@gndev.studio", link: "#" },
+        { k: "github", v: "github.com/gn-d3v", link: "https://github.com/GN-d3v" },
       ],
       form: {
         name: "nome",

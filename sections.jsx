@@ -242,9 +242,33 @@ function Contact({ t }) {
   const c = t.contact;
   const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", company: "", budget: "", msg: "" });
-  const onSubmit = (e) => {
+  const [loading, setLoading] = useState(false);
+  const onSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    try {
+      await fetch("https://formsubmit.co/ajax/gnd3vs@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Nuovo contatto da ${form.name}`,
+          nome: form.name,
+          email: form.email,
+          azienda: form.company || "Non specificata",
+          budget: form.budget || "Non specificato",
+          messaggio: form.msg,
+        }),
+      });
+      setSent(true);
+    } catch (err) {
+      console.error(err);
+      alert("C'è stato un errore. Riprova più tardi.");
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <section id="contact" className="scene" data-screen-label="06 Contact" style={{ background: "var(--bg-2)" }}>
@@ -296,7 +320,9 @@ function Contact({ t }) {
               </div>
               <div className="submit-row">
                 <span className="hint">{c.form.hint}</span>
-                <button type="submit" className="submit">{c.form.cta}</button>
+                <button type="submit" className="submit" disabled={loading}>
+                  {loading ? "invio..." : c.form.cta}
+                </button>
               </div>
             </>
           )}
