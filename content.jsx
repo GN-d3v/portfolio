@@ -101,6 +101,7 @@ const CONTENT = {
           desc: "App per consultare dati su criptovalute e NFT in profondità. Portfolio personale, watchlist, feed notizie crypto in tempo reale. Per i veri appassionati.",
           stack: ["React Native", "CoinGecko API", "Node.js", "Firebase"],
           year: "2024 → live",
+          url: "https://gn-d3v.github.io/stonksapp/",
         },
         {
           num: "002",
@@ -109,6 +110,7 @@ const CONTENT = {
           desc: "App di incontri per animali, sviluppata per un'azienda di collari di lusso. Profili animali con pedigree e propensioni, pubblicità intelligente dei collari in base alle stats del cane.",
           stack: ["React Native", "Node.js", "PostgreSQL", "AWS"],
           year: "2024 → live",
+          url: "https://gn-d3v.github.io/littlestar/",
         },
         {
           num: "003",
@@ -117,6 +119,7 @@ const CONTENT = {
           desc: "Marketplace ad hoc per azienda vinicola. Vendita di vini e prodotti affini con gestione completa di forniture, pagamenti e advertising a 360°.",
           stack: ["Next.js", "Stripe", "PostgreSQL", "AWS", "Google Ads"],
           year: "2023 → live",
+          url: "https://gn-d3v.github.io/litrowine/",
         },
       ],
     },
@@ -293,6 +296,7 @@ const CONTENT = {
           desc: "App for in-depth cryptocurrency and NFT data. Personal portfolio, watchlists, real-time crypto news feed. Built for true enthusiasts.",
           stack: ["React Native", "CoinGecko API", "Node.js", "Firebase"],
           year: "2024 → live",
+          url: "https://gn-d3v.github.io/stonksapp/",
         },
         {
           num: "002",
@@ -301,6 +305,7 @@ const CONTENT = {
           desc: "Pet matchmaking app developed for a luxury pet collar brand. Animal profiles with pedigree and temperament data, smart collar advertising based on dog stats.",
           stack: ["React Native", "Node.js", "PostgreSQL", "AWS"],
           year: "2024 → live",
+          url: "https://gn-d3v.github.io/littlestar/",
         },
         {
           num: "003",
@@ -309,6 +314,7 @@ const CONTENT = {
           desc: "Custom marketplace for a wine company. Selling wines and related products with full supply management, payments and 360° advertising.",
           stack: ["Next.js", "Stripe", "PostgreSQL", "AWS", "Google Ads"],
           year: "2023 → live",
+          url: "https://gn-d3v.github.io/litrowine/",
         },
       ],
     },

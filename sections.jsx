@@ -165,12 +165,21 @@ function Projects({ t }) {
       <p className="reveal" style={{ color: "var(--fg-dim)", maxWidth: 620, fontSize: 14 }}>{p.headingSub}</p>
       <div className="projects-list">
         {p.items.map((it, i) => (
-          <div
+          <a
             key={i}
+            href={it.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="project reveal"
             onMouseEnter={() => setActive(i)}
             onMouseLeave={() => setActive(null)}
-            style={active !== null && active !== i ? { opacity: 0.4 } : {}}
+            style={{
+              ...(active !== null && active !== i ? { opacity: 0.4 } : {}),
+              textDecoration: "none",
+              color: "inherit",
+              display: "grid",
+              cursor: "pointer",
+            }}
           >
             <div className="pnum">[{it.num}]</div>
             <div className="pmain">
@@ -183,8 +192,11 @@ function Projects({ t }) {
                 <span key={j}>{s}{j < it.stack.length - 1 ? " ·" : ""}</span>
               ))}
             </div>
-            <div className="pyear">{it.year}</div>
-          </div>
+            <div className="pyear" style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              {it.year}
+              <span style={{ fontSize: 12, opacity: 0.5 }}>↗</span>
+            </div>
+          </a>
         ))}
       </div>
     </section>
